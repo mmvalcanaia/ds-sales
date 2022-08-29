@@ -7,7 +7,9 @@
   --secondary-color: #1b2531;
   --light-color: #e9e9e9;
   --light-grey-50-color: #9aaabe;
-  --light-grey-100-color: #384459;
+  --light-grey-100-color: #949494;
+  --light-grey-150-color: #384459;
+  --green-color: #08b976;
 }
 
 body {
