@@ -30,7 +30,6 @@ export const buildPieChartConfig = (labels: string[] = [], name: string) => {
         vertical: 5
       }
     },
-
     dataLabels: {
       enabled: false
     },

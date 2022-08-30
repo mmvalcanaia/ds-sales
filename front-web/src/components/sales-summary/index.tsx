@@ -24,9 +24,14 @@ function SalesSummary({ filterData }: Props) {
   const params = useMemo(() => buildFilterParams(filterData), [filterData]);
 
   useEffect(() => {
-    makeRequest.get<SalesSummaryData>('/sales/summary', { params }).then((response) => {
-      setSummary(response.data);
-    });
+    makeRequest
+      .get<SalesSummaryData>('/sales/summary', { params })
+      .then((response) => {
+        setSummary(response.data);
+      })
+      .catch(() => {
+        console.error('Error fecthing sales summary');
+      });
   }, [params]);
 
   return (
